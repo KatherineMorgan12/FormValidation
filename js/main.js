@@ -3,4 +3,16 @@ window.onload = function () {
     formBtn.onclick = main;
 };
 function main() {
+    isTextPresent("first-name", "First name is required.");
+    isTextPresent("last-name", "Last name is required.");
+}
+function isTextPresent(id, errMessage) {
+    var textBox = document.getElementById(id);
+    var textBoxValue = textBox.value;
+    if (textBoxValue == "") {
+        var errSpan = textBox.nextElementSibling;
+        errSpan.innerHTML = errMessage;
+        return false;
+    }
+    return true;
 }
