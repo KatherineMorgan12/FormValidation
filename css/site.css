@@ -13,7 +13,7 @@ h1{
     text-align: center;
 }
 
-h1, form label, form button{
+h1, form label, form button, form input, form span{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
