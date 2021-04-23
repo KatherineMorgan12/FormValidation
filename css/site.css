@@ -42,6 +42,11 @@ form button:hover{
 
 }
 
+.message{
+    font-style: italic;
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px){
     form label{
         text-align: left;
